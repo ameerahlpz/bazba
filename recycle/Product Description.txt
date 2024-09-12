@@ -1,0 +1,14 @@
+User Real IP Address - ::1
+Fatal error: Uncaught TypeError: Unsupported operand types: int * string in C:\xampp\htdocs\phpcode\cart.php:98 Stack trace: #0 {main} thrown in C:\xampp\htdocs\phpcode\cart.php on line 98
+
+Explore the day with Sammy, Terrence, Rajiv, Shawn and Tony at the river.  The excitement of the day is filled with stealing from Mr. Singh's orange walk and Sammy digging for worms to catch a fish.  Terrence came with a slingshot to shoot birds.  Rajiv gets a surprise when he searches for firewood.  Shawn dives into the river and plays "kin-puppa-lick".  All the joys of their day gets spoiled when the boys miss their parent's Easter fair and are rained out for the day.
+
+Join Ken and Delores as they explors the backyard.  They pick a mango, but Delores gets bitten by ants and drops it.  Uncle Harry helps them make mango juice.  He tells them about ants.  There are many different types of ants.  Sometimes they tell you things.  Red ants come inside when it is going to rain.  They talk with their antennae.  Uncle Harry goes for his mid-day nap while Ken and Delores continue to play.
+
+(DVD) Man-A-Yard is set in the 1970s when many Jamaican businessmen were leaving the island.  Thomas, a tailorman, more nationalistic in his vission, was trying to establish a viable tailoring establishment.  Apart from the difficulties he had in the general society, he also had difficulties at home with his wife who was thinking of migrating.  He himself is not blameless and contributes to the difficulties he is having.  When the curtains close, we will see how successful he has been in establishing himself as Man-A-Yard.
+
+Meditations of Basil Ku-Soonogo Lopez.  As he shares in this book of meditaions share in his poems about his children, wife and friends.  He speaks of love, work, death, travel and spirituality.  Be enlightened as you journey with him into the depths of his mind.  
+
+Ku-Soonogo (African name) was born in Kingston, Jamaica, West Indies.  He went to Nigeria in 1974 to reestablish his roots.  It was during this stay that many of the poems in this volume were writen. The language itself will reveal that the voice, filled with the joys and pain of return, is that of one born in the diaspora.  To those of us who have not yet made the pilgrimage home, Ku-Soonogo offers his pen to accompany them on their journey.
+
+echo 'User Real IP Address - '.$ip;  //line 160 in Bazba.php and line 64 in cart(2).php

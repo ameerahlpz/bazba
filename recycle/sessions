@@ -1,0 +1,14 @@
+<?php
+//sessions()
+
+session_start();
+$_SESSION{'username'}="Ameerah";
+$_SESSION['password']="p@ssword2";
+echo "Session data is saved.";
+
+
+
+
+
+
+?>

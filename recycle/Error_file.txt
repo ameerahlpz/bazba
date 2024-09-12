@@ -1,0 +1,43 @@
+php and html database tutorial
+
+Fatal error: Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''orders_products' ('product_ID', 'currency') values ('3','CAD')' at line 1 in C:\xampp\htdocs\phpcode\index.php:217 Stack trace: #0 C:\xampp\htdocs\phpcode\index.php(217): mysqli_query(Object(mysqli), 'insert into 'or...') #1 {main} thrown in C:\xampp\htdocs\phpcode\index.php on line 217
+
+<input type="submit" name="submit" value="Submit">
+		    <select name="currency">
+                            <option>Select Currency</option>
+                            <option>USD</option>
+                            <option>CAD</option>
+                            <option>JAD</option>
+            	    </select>
+
+
+include('./includes/connect.php');
+if(isset($_POST['submit'])){
+	$product_ID=trim($_POST["cost"]);
+	$currency=$_POST["currency"];
+	$insert_query="insert into 'orders_products' ('product_ID', 'currency') values ('$product_ID','$currency')";
+	$result=mysqli_query($con,$insert_query);
+	if($result){
+		echo "<script>alert('Category has been successfully updated')</script>";
+		echo $Quantity;
+		echo $product_ID;
+	}
+}
+
+
+What was showing up at bottom of file.
+
+//*	$insert_query="insert into 'orders_products' ('product_ID') values ('$product_ID')";
+//*	$result=mysqli_query($con, $insert_query);
+//*	if ($result){
+//*		echo "<script>alert('Category has been successfully updated')</script>";
+//*	}
+//*}
+
+//*$con=mysqli_connect('localhost','root','','bazbastore');
+//*if (!$con){
+	
+//*	die(mysqli_error($con));
+//*	}
+
+//*?>

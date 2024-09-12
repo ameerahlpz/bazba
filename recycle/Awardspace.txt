@@ -1,0 +1,79 @@
+Host:  pdb18.awardspace.net
+User:  2366799_bazba
+Psswd: p@ssword2
+Name:  2366799_bazba
+bazba.ca
+
+http://index.bazba.ca/admin-area/insert_products.php  (header.php)
+http://index.bazba.ca/admin-area/cart.php	(header.php, checkout button)
+
+
+
+
+https://www.youtube.com/watch?v=B3QQUli26pU
+
+
+<!-----<?php  
+	
+function getIPAddress() {  
+    //whether ip is from the share internet  
+     if(!empty($_SERVER['HTTP_CLIENT_IP'])) {  
+                $ip = $_SERVER['HTTP_CLIENT_IP'];  
+        }  
+    //whether ip is from the proxy  
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {  
+                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];  
+     }  
+//whether ip is from the remote address  
+    else{  
+             $ip = $_SERVER['REMOTE_ADDR'];  
+     }  
+     return $ip;  
+}  
+$ip = getIPAddress();  
+ 
+	?>----->
+
+connect.php
+
+<!-----<?php
+	$product_ID=$_POST['cost'];
+
+//*Database connection
+
+	$conn = new mysqli('localhost','root','','bazbastore');
+	if($conn->connect_error){
+		die('Connection Failed : '.$conn->connect_error);
+	}else{
+	
+	$stmt = $conn->prepare("insert into orders_products (product_ID) values (?)");
+	$stmt ->bind_param("i", $product_ID);
+	$stmt ->execute();
+	echo "Thank-you for your order.";
+	$stmt ->close();
+	$conn ->close();
+	}
+
+?>----->
+
+user_registration.php (top)
+
+<?php
+
+include('../includes/connect.php');
+
+?>
+
+//<?php require_once __DIR__ . './../header.php';?>
+    
+//<?php require_once $_SERVER['DOCUMENT_ROOT'] .'/header.php';?>
+
+
+
+
+
+<table border: 1px solid purple;>
+} else {
+    echo "0 results";
+}
+DailyLessonPlanTemplate-1(1).docx
