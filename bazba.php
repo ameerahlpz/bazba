@@ -153,7 +153,7 @@ input {
 		$product_ID=$row['product_ID'];
 		echo "<div class='col-md-8 mb-4'>
 			<div class='card'>
-				<img src='./images/$image' class='card-img-top' alt='...'>
+				<img src='./images/$image' class='card-img-top' alt='title'>
 			<div class='card-body'>
 				<h5 class='card-title'>$title</h5>
 				<p class='card-text'>$description</p><br>
